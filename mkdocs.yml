@@ -1,0 +1,93 @@
+site_name: Portal Pintar Doc
+site_url: https://ppdocs.serverocid.site
+
+
+theme:
+  name: material
+  favicon: images/favicon-16x16.png
+  #custom_dir: overrides
+  language: id
+  icon:
+    logo: fontawesome/solid/file-powerpoint #images/android-chrome-512x512.png 
+  plugins:
+    - typeset
+    - search
+
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      primary: red
+      accent: blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: yellow
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  features:
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - header.autohide
+    - announce.dismiss
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+
+
+# nav:
+#   - Home: index.md
+#   - About: about.md
+#   - Install: Install.md
+#   - Docker Containers:
+#       - Overview: docker-containers.md
+#       - Adguard: adguard.md
+#       # Additional Docker container pages...
+#   - Networking:
+#       - Overview: networking-overview.md
+#       - GlusterFS: glusterfs.md
+#   # Additional sections...
+
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - toc:
+      permalink: true
+  # Additional Markdown extensions...
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.details
+  # More pymdownx extensions...
+
+copyright: Copyright &copy; 2024 Tim PTIM
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/jrs17560
+    - icon: fontawesome/brands/whatsapp
+      link: https://www.youtube.com/jrs17560
+    - icon: fontawesome/solid/paper-plane
+      link: https://www.youtube.com/jrs17560
+    
